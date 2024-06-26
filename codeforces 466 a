@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,m,a,b,c,d;
+    scanf("%d %d %d %d",&n,&m,&a,&b);
+    int i=((n/m)+1)*b;
+    int j= (n/m)*b+(n%m)*a;
+    if(n % m == 0)
+    {
+        c=(n/m)*b;
+    }
+    else
+    {
+        if(i > j){
+          c=j;  
+        }
+        else
+        {
+            c=i;
+        }
+        
+    }
+    d=n*a;
+    if(c<d)
+    {
+        printf("%d",c);
+    }
+    else
+    {
+        printf("%d",d);
+    }
+    return 0;
+}
