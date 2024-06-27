@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int w;
+    scanf("%d",&w);
+    if (w!=2)
+    {
+        if(w & 1)
+        {
+            printf("NO");
+        }
+        else
+        {
+            printf("YES");
+        }
+    }
+    else
+    {
+        printf("NO");
+    }
+}
