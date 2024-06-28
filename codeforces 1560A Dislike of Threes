@@ -1,0 +1,24 @@
+#include <stdio.h>
+ 
+int main() {
+    int t, k;
+    int r[1000];
+    int b = 1;
+    int c = 0;
+ 
+    while (c < 1000) {
+        if (b % 3 != 0 && b % 10 != 3) {
+            r[c] = b;
+            c++;
+        }
+        b++;
+    }
+ 
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++) {
+        scanf("%d", &k);
+        printf("%d\n", r[k - 1]);
+    }
+ 
+    return 0;
+}
